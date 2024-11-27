@@ -15,8 +15,8 @@ window.onload = function() {
 
 pronoun.map ((itempronoun) => {
   adj.map((itemadj) => {
-    adj.noun((itemnoun) => {
-      adj.com((itemcom) => {
+    noun.map((itemnoun) => {
+      com.map((itemcom) => {
 
         DomainName +=`<li class="list-group-item">${itempronoun}${itemadj}${itemnoun}${itemcom}</li>`
       } )
