@@ -12,10 +12,18 @@ window.onload = function() {
   let com = [".com", ".net", ".io", ".us"];
 
   let DomainName = "";
-  DomainName += `<li class="list-group-item">${item1}</li>
-`;
 
-  pronoun.map(item1 => {});
+pronoun.map ((itempronoun) => {
+  adj.map((itemadj) => {
+    adj.noun((itemnoun) => {
+      adj.com((itemcom) => {
 
-  document.querySelector("#domain-name").innerHTML = DomainName;
+        DomainName +=`<li class="list-group-item">${itempronoun}${itemadj}${itemnoun}${itemcom}</li>`
+      } )
+    } )
+  } )
+})
+
+  document.querySelector("#domain-name").innerHTML =
+    DomainName
 };
